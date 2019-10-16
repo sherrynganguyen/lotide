@@ -1,4 +1,4 @@
-/*let failemoji = String.fromCharCode(0x1F621);
+let failemoji = String.fromCharCode(0x1F621);
 let passemoji = String.fromCharCode(0x1F621);
 const assertEqual = function(actual, expected) {
   if (actual !== expected) {
@@ -7,7 +7,7 @@ const assertEqual = function(actual, expected) {
     return `${passemoji} Assertion Passed: ${actual} === ${expected}`;
   }
 };
-*/
+
 // TEST CODE
 function tail(array) {
   let array1 = array;
