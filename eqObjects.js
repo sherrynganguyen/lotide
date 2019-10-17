@@ -42,7 +42,7 @@ const eqArrays = function(array1, array2) {
 */
 const eqObjects = function(object1, object2) {
   let result = true;
-  if (Object.keys(object1).length !== Object.keys(object2).length) { 
+  if (Object.keys(object1).length !== Object.keys(object2).length) {
     return result = false;
   }  else {
     for (let key of Object.keys(object1)) {
