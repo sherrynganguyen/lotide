@@ -1,15 +1,4 @@
-let failemoji = String.fromCharCode(0x1F621);
-let passemoji = String.fromCharCode(0x1F621);
-const assertEqual = function(actual, expected) {
-  if (actual !== expected) {
-    return `${failemoji} Assertion Failed: ${actual} !== ${expected}`;
-  } else {
-    return `${passemoji} Assertion Passed: ${actual} === ${expected}`;
-  }
-};
-
-// TEST CODE
-
+const assertEqual = require('./assertEqual');
 function head(array) {
   return array[0];
 }
