@@ -39,11 +39,11 @@ const takeUntil = function(array, callback) {
   for (let item of array) {
     if (callback(item)) break;
     else {
-    result.push(item);   
+      result.push(item);
     }
   }
   return result;
-}
+};
 const results2 = takeUntil(data2, x => x === ',');
 console.log(results2);
 
