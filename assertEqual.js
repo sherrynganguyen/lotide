@@ -2,13 +2,12 @@ let failemoji = String.fromCharCode(0x1F621);
 let passemoji = String.fromCharCode(0x1F621);
 const assertEqual = function(actual, expected) {
   if (actual !== expected) {
-    return `${failemoji} Assertion Failed: ${actual} !== ${expected}`;
+    console.log(`${failemoji} Assertion Failed: ${actual} !== ${expected}`);
+    return false;
   } else {
-    return `${passemoji} Assertion Passed: ${actual} === ${expected}`;
+    console.log(`${passemoji} Assertion Passed: ${actual} === ${expected}`)
+    return true;
   }
 };
 
-// TEST CODE
-// console.log(assertEqual("Lighthouse Labs", "Bootcamp"));
-// console.log(assertEqual(1, 1));
 module.exports = assertEqual;
