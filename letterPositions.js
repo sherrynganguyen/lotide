@@ -50,6 +50,8 @@ const letterPositions = function(sentence) {
   delete results[" "];
   return results;
 };
-console.log(letterPositions("hello"));
-console.log(letterPositions("lighthouse labs"));
-console.log(assertArraysEqual(letterPositions("hello").e, [1]));
+
+module.exports = letterPositions;
+// console.log(letterPositions("hello"));
+// console.log(letterPositions("lighthouse labs"));
+// console.log(assertArraysEqual(letterPositions("hello").e, [1]));

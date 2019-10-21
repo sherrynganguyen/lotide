@@ -46,6 +46,6 @@ const flatten = function(array) {
   console.log(newArray);
   console.log(assertArraysEqual(newArray,array));
 };
-
-flatten([1, 2, [3, 4], 5, [6]]);
-flatten([1, 2, 3, 4, 5, 6]);
+module.exports = flatten;
+// flatten([1, 2, [3, 4], 5, [6]]);
+// flatten([1, 2, 3, 4, 5, 6]);

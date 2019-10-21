@@ -71,10 +71,10 @@ const assertObjectsEqual = function(object1, object2) {
 };
 
 //TEST CODE
-
+module.exports = assertObjectsEqual;
 const cd = { c: "1", d: ["2", 3] };
 const dc = { d: ["2", 3], c: "1" };
-console.log(assertObjectsEqual(cd, dc)); // => true
+//console.log(assertObjectsEqual(cd, dc)); // => true
 
 const cd2 = { c: "1", d: ["2", 3, 4] };
-console.log(assertObjectsEqual(cd, cd2)); // => false
+//console.log(assertObjectsEqual(cd, cd2)); // => false

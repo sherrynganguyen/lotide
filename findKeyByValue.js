@@ -27,6 +27,8 @@ const bestTVShowsByGenre = {
   comedy: "Brooklyn Nine-Nine",
   drama:  "The Wire"
 };
-console.log(assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama"));
-console.log(assertEqual(findKeyByValue(bestTVShowsByGenre, "The Expanse"), "drama"));
-console.log(assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined));
+
+module.exports = findKeyByValue;
+// console.log(assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama"));
+// console.log(assertEqual(findKeyByValue(bestTVShowsByGenre, "The Expanse"), "drama"));
+// console.log(assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined));
