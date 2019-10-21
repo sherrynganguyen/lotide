@@ -1,36 +1,8 @@
 //TEST/ASSERTION FUNCTIONS
 //erArrays.js
 
-const eqArrays = function(array1, array2) {
-  let result = true;
-  if (array1.length !== array2.length) {
-    result = false;
-  }
-  else {
-    for (let i = 0; i < array1.length; i++) {
-      if (array1[i] === array2[i]) {
-        result = true;
-      }
-      else {
-        result = false;
-        break;
-      }
-    }
-  }
-  return result;
-};
-
-let failemoji = String.fromCharCode(0x1F621);
-let passemoji = String.fromCharCode(0x1F621);
-
-const assertArraysEqual = function(array1, array2) {
-  if (eqArrays(array1, array2)) {
-    return `${failemoji} Assertion Passed: ${array1} === ${array2}`;
-  }
-  else {
-    return `${passemoji} Assertion Failed: ${array1} !== ${array2}`;
-  }
-};
+const eqArrays = require('./eqArrays');
+const assertArraysEqual = require ('./assertArraysEqual');
 
 //ACTUAL FUNCTION
 
@@ -41,16 +13,11 @@ const middle = function(array) {
   let midIndex = Math.floor(array.length / 2);
   if (array.length % 2 === 0) {
     middleStr = [array[midIndex - 1], array[midIndex]];
-    console.log(middleStr);
-    console.log([array[midIndex - 1], array[midIndex]]);
-    console.log(assertArraysEqual(middleStr, [array[midIndex - 1], array[midIndex]]));
   }
   else {
     middleStr = [array[midIndex]];
-    console.log(middleStr);
-    // assertArraysEqual(middleStr, array[midIndex]);
-    console.log(assertArraysEqual(middleStr, [array[midIndex]]));
   }
+  return middleStr;
 };
 
-middle([1, 2, 3, 4, 5, 6]);
+module.exports = middle;
