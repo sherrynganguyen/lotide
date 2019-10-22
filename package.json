@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@sherrynganguyen/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sherry Nguyen' Lotide files",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -19,7 +19,8 @@
     "type": "git",
     "url": "git+https://github.com/sherrynganguyen/lotide.git"
   },
-  "author": "",
+  "author": "Sherry Nguyen",
+  "email": "nganguyen.sfu@gmail.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sherrynganguyen/lotide/issues"
